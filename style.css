@@ -1,4 +1,4 @@
-.navigationBar{
+/* .navigationBar{
     display: flex;
     position: sticky;
     z-index: 100;
@@ -48,7 +48,6 @@ body{
     height: 100vh;
 }
 .libBar{
-    /* padding: 0 20px 20px; */
     padding: 0 24px ;
     padding-bottom: 5px;
     justify-content: space-between;
@@ -64,7 +63,6 @@ body{
     justify-content: space-around;
     background-color: #121212;
     border-right : 1px solid #282828; 
-    /* border right only applies border to the right */
     overflow-y: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -128,20 +126,7 @@ h3 {
 .btn-primary:hover{
     transform: scale(1.05);
 }
-/* .language{
-    background-color:  #121212;
-    padding: 8px 16px;
-    border:solid rgb(206, 206, 206) 1px;
-    color: white;
-    border-radius: 30px;
-    font-weight: bold;
-    transition : 1ms linear;
-    width: 150px;
-}
-.language:hover{
-    border: solid 1px white;
-    transform:scale(1.05);
-} */
+
 .language-btn {
     background: #242424;
     color: white;
@@ -197,7 +182,7 @@ h3 {
 }
 .resize-handle:hover,
 .resize-handle:active {
-    background-color: rgb(228, 228, 228);   /* Spotify green */
+    background-color: rgb(228, 228, 228);  
 }
 .container{
     display: flex;
@@ -237,4 +222,6 @@ h3 {
     height: 50%;
     width: 30%;
     border-radius: 30px;
-}
+/* }  
+ /* The styling i did on my own */
+ /* The solution */
