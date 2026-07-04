@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <img src="logo.svg" alt="" srcset=""> -->
+    <main class="container flex">
+        <section class="navigationBar">
+            <div class="leftNav">
+                <img src="logo.svg" alt="logo" class="logo">
+                <div class="homeSearch">
+                    <button></button>
+                    <input type="text" value="What do you want to play?" class="search">
+                </div>
+            </div>
+            <div class="rightNav">
+                <a href="#" class="navlinks">Premium</a>
+                <a href="#" class="navlinks">Support</a>
+                <a href="#" class="navlinks">Download</a>
+                <a href="#" class="navlinks">Install App</a>
+                <a href="#" class="navlinks">Sign up</a>
+                <button class="Signin">Log in</button>
+            </div>
+        </section>
+        <section class="content">
+            <aside class="left border flex">
+                <div class="header">
+                    <div class="libBar flex">
+                        <h2>YourLibrary</h2>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <section class="playlistpodcast">
+                    <div class="playlist box">
+                        <div class="createPlaylist">
+                            <h2>Create your first playlist</h2>
+                            <p>It's easy,we'll help you</p>
+                            <button class="btn-primary">Create playlist</button>
+                        </div>
+                    </div>
+                    <div class="podcast box">
+                        <div class="browsePodcast">
+                            <h2>Let's find some podcasts to follow</h2>
+                            <p>We'll keep you updated on new episodes</p>
+                            <button class="btn-primary">Browse podcasts</button>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="footer flex">
+                    <div class="legal-links" style="gap: 2px;">
+                        <a href="#" class="footerWords">Legal</a>
+                        <a href="#" class="footerWords">Safety & Privacy Center</a>
+                        <a href="#" class="footerWords">Privacy Policy</a>
+                        <a href="#" class="footerWords">About Ads</a>
+                        <a href="#" class="footerWords">Accessibility</a>
+                    </div>
+                    <button class="language-btn">🌐 English</button>
+                </footer>
+            </aside>
+            <div class="resize-handle"></div>
+            <div class="right border"></div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

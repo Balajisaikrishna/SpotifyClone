@@ -1,0 +1,240 @@
+.navigationBar{
+    display: flex;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #282828;
+    background-color: #000;
+}
+.leftNav{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 0;
+}
+.homeSearch{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.rightNav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Pliant", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.libBar{
+    /* padding: 0 20px 20px; */
+    padding: 0 24px ;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    width: 280px;
+    height: 86vh;
+    flex-direction: column;
+    padding: 20px 0;
+    padding-top:0;
+    justify-content: space-around;
+    background-color: #121212;
+    border-right : 1px solid #282828; 
+    /* border right only applies border to the right */
+    overflow-y: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.right{
+    width: 70vw;
+    background-color: #121212;
+}
+a{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+.libBar h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+.footer{
+    display: flex;
+    margin-top:auto;
+    padding : 20px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 12px;
+}
+.legal-links {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: space-between;
+}
+.left footer a:hover{
+    text-decoration: underline;
+}
+h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.createPlaylist p,
+.browsePodcast p {
+    font-size: 15px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+.box h2{
+    font-size: 15px;
+}
+.btn-primary{
+    background-color: white;
+    color: black;
+    border : none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1ms linear;
+}
+.btn-primary:hover{
+    transform: scale(1.05);
+}
+/* .language{
+    background-color:  #121212;
+    padding: 8px 16px;
+    border:solid rgb(206, 206, 206) 1px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition : 1ms linear;
+    width: 150px;
+}
+.language:hover{
+    border: solid 1px white;
+    transform:scale(1.05);
+} */
+.language-btn {
+    background: #242424;
+    color: white;
+    border: rgb(188, 188, 188) solid 1px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: 1ms linear;
+}
+.language-btn:hover{
+    transform: scale(1.05);
+    border: rgb(255, 255, 255)solid 1px;
+}
+.add-btn{
+    border-radius : 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border : none;
+    font-size: 20px;
+    background-color: #242424;
+    color: white;
+    cursor:pointer;
+}
+.container .header{
+    justify-content: center;
+    align-items: center;
+}
+.playlistpodcast{
+    height: 35vh;
+    overflow-y : auto;  
+    scrollbar-width: none;  
+}
+.box{
+    padding: 10px;
+    height: 120px;
+    background-color: #242424;
+    margin: 0 16px 12px;
+   border-radius: 8px;
+}
+.playlist, .podcast {
+    margin-bottom: 8px;
+}
+.resize-handle{
+    width:2px;
+    background-color: #282828;
+    cursor: grab;
+    position: relative;
+    z-index: 10;
+}
+.resize-handle:hover,
+.resize-handle:active {
+    background-color: rgb(228, 228, 228);   /* Spotify green */
+}
+.container{
+    display: flex;
+    height: 100vh;
+    position: relative
+}
+.navlinks{
+    font-weight: 500;
+    transition: 1ms linear;
+}
+.navlinks:hover{
+    transform: scale(1.05);
+    color: white;   
+}
+.logo{
+    filter: invert(100%);
+}
+.search{
+    width: 60%;
+    height: 50px;
+    background-color: #242424;
+    border: white 2px solid;
+    border-radius: 30px;
+    color: #c1c0c0;
+    text-align: left;
+    font-weight: 550;
+}
+.content{
+    display: flex;
+    height: 80vh;
+    gap: 5px;
+    width: 100%;
+}
+.Signin{
+    border: none;
+    font-family: "Pliant", sans-serif;
+    height: 50%;
+    width: 30%;
+    border-radius: 30px;
+}
