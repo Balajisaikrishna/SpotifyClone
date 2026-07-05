@@ -1,9 +1,37 @@
-.flex{
+.flex {
     display: flex;
 }
-.items-center{
+
+.items-center {
     align-items: center;
 }
-.justifyContent{
+
+.justifyContent {
     justify-content: center;
 }
+
+.border {
+    border: red 1px solid;
+    margin: 3px;
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.blackbg {
+    background-color: black;
+}
+
+.bggrey {
+    background-color: #121212;
+}
+
+.p1 {
+    padding: 10px;
+}
+
