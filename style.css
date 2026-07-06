@@ -270,6 +270,13 @@ h3 {
 /* }  
  /* The styling i did on my own
 The solution */
+.container {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+
 body {
     background-color: black;
     color: white;
@@ -508,10 +515,132 @@ body {
     transition: 100ms ease-in-out;
 }
 
-.card:hover .play{
-        opacity: 1;
-        top: 84px;
+.card:hover .play {
+    opacity: 1;
+    top: 84px;
 }
+
 .card {
     position: relative;
+}
+
+.right {
+    position: relative;
+}
+
+.playbar {
+    position: absolute;
+    width: 100%;
+    padding-left: 12px;
+    background-color: #181818;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+}
+
+.pprewind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    padding: 12px 0;
+    width: fit-content;
+    transform: scale(0.5);
+}
+
+/* Button base styles */
+.ppn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.ppn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.08);
+}
+
+.ppn:active {
+    transform: scale(0.95);
+}
+
+/* SVG icons */
+.ppn svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
+}
+
+/* Play button is larger and more prominent */
+.play-btn {
+    background: #fff;
+    padding: 14px;
+    margin: 0 12px;
+}
+
+.play-btn svg {
+    width: 32px;
+    height: 32px;
+    fill: #000;
+}
+
+.play-btn:hover {
+    background: #f0f0f0;
+}
+
+.songList {
+    overflow-y: scroll;
+    height: 330px;
+}
+
+.songList ul {
+    padding: 0 12px;
+}
+
+.songList ul img {
+    height: 30px;
+}
+
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-size: 12px;
+    cursor : pointer;
+    padding: 5px 5px;
+    border: #8a8a8a solid 1px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    position: relative;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+.playnow span{
+    font-size:10px;
+    width: auto;
+    padding: 12px;
+   
+}
+.playnow{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
 }
